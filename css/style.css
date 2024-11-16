@@ -52,3 +52,133 @@ p.hover-item:hover {
 input.input[type="text"] {
   color: rgb(139, 16, 0);
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+/* Основні стилі для html та body */
+html,
+body {
+  font-family: "Times New Roman", Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/earth_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0000ff;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0000ff;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.copyright {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+/* Основний контент */
+.main-content {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  background-image: url(../images/earth_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.navigation-list {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-list-item {
+  border-top: 1px solid #fdfdfd;
+  border-radius: 15px;
+}
+
+.navigation-list-item:hover {
+  background-color: #0000ff;
+  box-shadow: 0 0 5px #0000ff, 0 0 25px #0000ff, 0 0 50px #0000ff;
+}
+
+.navigation-list-link {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+/* Логотип */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url(../images/contacts.jpg);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 20px;
+}
+
+.logo-for-link {
+  color: #ffffff;
+}
+
+/* Main title */
+.container-title-main {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #060658;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Main page</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a class="logo-for-link" href="#">Home work 5</a>
+      </div>
+
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item"><a class="navigation-list-link" href="index.html">Main page</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="index2.html">index2</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="index3.html">index3</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <div class="container">
+        <!-- тег-->
+        <h1>Застосовується до тегів h1, Вага 0,0,0,1</h1>
+
+        <!-- клас -->
+        <p class="text">Застосовується до класу text, Вага 0,0,1,0</p>
+
+        <!-- ID -->
+        <p id="unique">Застосовується до ID unique, Вага 0,1,0,0</p>
+
+        <!-- атрибут -->
+        <a href="#" title="Посилання">Застосовується до всіх тегів a, які мають атрибут title, Вага 0,0,1,1</a>
+
+        <!-- вкладені селектори -->
+        <div class="container">
+          <span>Застосовується до вкладеного селектора span всередині div,,Вага 0,0,0,2</span>
+        </div>
+
+        <!-- дочірні селектори -->
+        <ul>
+          <li>Застосовується до дочірнього селектора li всередині ul, Вага 0,0,0,2</li>
+        </ul>
+
+        <!-- послідовність  клас + тег -->
+        <p class="highlight">Застосовується до класу highlight разом із тегом p, Вага 0,0,1,1</p>
+
+        <!-- клас + псевдоклас -->
+        <p class="hover-item">Застосовується до класу hover-item з псевдокласом :hover, Вага 0,0,2,1</p>
+
+        <!-- ID + тег/не рекомендовано робити такі великі вкладення, зроблено виключно для прикладу -->
+        <div id="container">
+          <section>
+            <h2>Заголовок</h2>
+            <div>
+              <p class="highwait">
+                Селектор #container section div p.highwait застосовується до елемента p із класом highwait, який
+                вкладений у
+                структуру: section div, всередині елемента з ID container, Вага 0,1,1,3
+              </p>
+            </div>
+          </section>
+        </div>
+        <!-- комбінація клас і атрибут -->
+        <input class="input" type="text"
+          placeholder="Застосовується до тегу input, класу .input, та атрибуту type='text'. Вага 0,0,2,1">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="container footer-inner">
+        <div class="copyright">&copy; NadiiaYevtushenko 2024</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</body>
+
+</html>
